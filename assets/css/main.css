@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-base text-ink font-body antialiased;
+  background-color: #FFFFFF;
+}
+
+::selection {
+  background-color: #6C4FCA;
+  color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6C4FCA;
+}
+
+:focus-visible {
+  outline: 2px solid #6C4FCA;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* signature: 2-photo crossfade slideshow in the Hero avatar */
+@keyframes photo-crossfade {
+  0%, 45%   { opacity: 1; transform: scale(1); }
+  50%, 95%  { opacity: 0; transform: scale(1.04); }
+  100%      { opacity: 1; transform: scale(1); }
+}
+.photo-slide {
+  animation: photo-crossfade 7s ease-in-out infinite;
+}
+
+/* signature: dot-grid texture used behind the hero photo */
+.dot-grid {
+  background-image: radial-gradient(circle, #D9DEE6 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+/* signature: pulsing "available" indicator */
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(108, 79, 202, 0.45); }
+  100% { box-shadow: 0 0 0 8px rgba(108, 79, 202, 0); }
+}
+.pulse-dot {
+  animation: pulse-ring 1.8s ease-out infinite;
+}
+
+/* reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

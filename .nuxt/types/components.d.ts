@@ -14,13 +14,15 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  MobileBottomNav: typeof import("../../components/MobileBottomNav.vue")['default']
   ProjectModal: typeof import("../../components/ProjectModal.vue")['default']
   TheCertifications: typeof import("../../components/TheCertifications.vue")['default']
   TheContact: typeof import("../../components/TheContact.vue")['default']
   TheExperience: typeof import("../../components/TheExperience.vue")['default']
   TheFooter: typeof import("../../components/TheFooter.vue")['default']
   TheHero: typeof import("../../components/TheHero.vue")['default']
-  TheNav: typeof import("../../components/TheNav.vue")['default']
+  TheNavDesktop: typeof import("../../components/TheNavDesktop.vue")['default']
+  TheNavMobile: typeof import("../../components/TheNavMobile.vue")['default']
   TheProjects: typeof import("../../components/TheProjects.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -46,13 +48,15 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+  LazyMobileBottomNav: LazyComponent<typeof import("../../components/MobileBottomNav.vue")['default']>
   LazyProjectModal: LazyComponent<typeof import("../../components/ProjectModal.vue")['default']>
   LazyTheCertifications: LazyComponent<typeof import("../../components/TheCertifications.vue")['default']>
   LazyTheContact: LazyComponent<typeof import("../../components/TheContact.vue")['default']>
   LazyTheExperience: LazyComponent<typeof import("../../components/TheExperience.vue")['default']>
   LazyTheFooter: LazyComponent<typeof import("../../components/TheFooter.vue")['default']>
   LazyTheHero: LazyComponent<typeof import("../../components/TheHero.vue")['default']>
-  LazyTheNav: LazyComponent<typeof import("../../components/TheNav.vue")['default']>
+  LazyTheNavDesktop: LazyComponent<typeof import("../../components/TheNavDesktop.vue")['default']>
+  LazyTheNavMobile: LazyComponent<typeof import("../../components/TheNavMobile.vue")['default']>
   LazyTheProjects: LazyComponent<typeof import("../../components/TheProjects.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>

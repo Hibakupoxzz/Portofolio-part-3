@@ -61,6 +61,15 @@ body {
   background-size: 16px 16px;
 }
 
+/* hide scrollbar on the horizontally-scrollable nav (masih bisa di-scroll via swipe/drag) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* signature: pulsing "available" indicator */
 @keyframes pulse-ring {
   0%   { box-shadow: 0 0 0 0 rgba(108, 79, 202, 0.45); }

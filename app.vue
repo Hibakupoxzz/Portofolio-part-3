@@ -1,14 +1,21 @@
+<script setup lang="ts">
+const activeSection = useActiveSection()
+const sectionClass = (id: string) => (activeSection.value === id ? '' : 'hidden md:block')
+</script>
+
 <template>
-  <div class="min-h-screen bg-white">
+  <div class="min-h-screen bg-white pb-16 md:pb-0">
     <div class="h-[3px] bg-ink" />
-    <TheNav />
+    <TheNavDesktop />
+    <TheNavMobile />
     <main>
-      <TheHero />
-      <TheProjects />
-      <TheExperience />
-      <TheCertifications />
-      <TheContact />
+      <TheHero :class="sectionClass('top')" />
+      <TheProjects :class="sectionClass('projects')" />
+      <TheExperience :class="sectionClass('experience')" />
+      <TheCertifications :class="sectionClass('certifications')" />
+      <TheContact :class="sectionClass('contact')" />
     </main>
-    <TheFooter />
+    <TheFooter class="hidden md:block" />
+    <MobileBottomNav />
   </div>
 </template>

@@ -14,13 +14,15 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
+export const MobileBottomNav: typeof import("../components/MobileBottomNav.vue")['default']
 export const ProjectModal: typeof import("../components/ProjectModal.vue")['default']
 export const TheCertifications: typeof import("../components/TheCertifications.vue")['default']
 export const TheContact: typeof import("../components/TheContact.vue")['default']
 export const TheExperience: typeof import("../components/TheExperience.vue")['default']
 export const TheFooter: typeof import("../components/TheFooter.vue")['default']
 export const TheHero: typeof import("../components/TheHero.vue")['default']
-export const TheNav: typeof import("../components/TheNav.vue")['default']
+export const TheNavDesktop: typeof import("../components/TheNavDesktop.vue")['default']
+export const TheNavMobile: typeof import("../components/TheNavMobile.vue")['default']
 export const TheProjects: typeof import("../components/TheProjects.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -46,13 +48,15 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+export const LazyMobileBottomNav: LazyComponent<typeof import("../components/MobileBottomNav.vue")['default']>
 export const LazyProjectModal: LazyComponent<typeof import("../components/ProjectModal.vue")['default']>
 export const LazyTheCertifications: LazyComponent<typeof import("../components/TheCertifications.vue")['default']>
 export const LazyTheContact: LazyComponent<typeof import("../components/TheContact.vue")['default']>
 export const LazyTheExperience: LazyComponent<typeof import("../components/TheExperience.vue")['default']>
 export const LazyTheFooter: LazyComponent<typeof import("../components/TheFooter.vue")['default']>
 export const LazyTheHero: LazyComponent<typeof import("../components/TheHero.vue")['default']>
-export const LazyTheNav: LazyComponent<typeof import("../components/TheNav.vue")['default']>
+export const LazyTheNavDesktop: LazyComponent<typeof import("../components/TheNavDesktop.vue")['default']>
+export const LazyTheNavMobile: LazyComponent<typeof import("../components/TheNavMobile.vue")['default']>
 export const LazyTheProjects: LazyComponent<typeof import("../components/TheProjects.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>

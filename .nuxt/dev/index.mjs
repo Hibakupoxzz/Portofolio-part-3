@@ -1,48 +1,49 @@
 import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { tmpdir } from 'node:os';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, createError, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, getResponseStatus, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getResponseStatusText } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/h3/dist/index.mjs';
 import { Server } from 'node:http';
-import { resolve, dirname, join } from 'node:path';
-import nodeCrypto from 'node:crypto';
+import { resolve, join, dirname } from 'node:path';
+import crypto$1 from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, createError, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, getResponseStatus, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getResponseStatusText } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/h3/dist/index.mjs';
-import { escapeHtml } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@vue/shared/dist/shared.cjs.js';
-import viteNodeEntry_mjs from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@nuxt/vite-builder/dist/vite-node-entry.mjs';
-import { viteNodeFetch } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@nuxt/vite-builder/dist/vite-node.mjs';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL, encodePath } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/defu/dist/defu.mjs';
-import destr, { destr as destr$1 } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/destr/dist/index.mjs';
-import { snakeCase } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/scule/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/devalue/index.js';
-import { isVNode, isRef, toValue } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/vue/index.mjs';
-import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unhead/dist/plugins.mjs';
-import { createHooks } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unstorage/drivers/fs.mjs';
-import file_58_47_47_47C_58_47Users_47Cornaa_47Downloads_47portfolio_45nuxt_47node_modules_47_64nuxt_47nitro_45server_47dist_47runtime_47utils_47cache_45driver_46js from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@nuxt/nitro-server/dist/runtime/utils/cache-driver.js';
-import { digest, hash as hash$1 } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/radix3/dist/index.mjs';
-import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/source-map/source-map.js';
+import { escapeHtml } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@vue/shared/dist/shared.cjs.js';
+import viteNodeEntry_mjs from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@nuxt/vite-builder/dist/vite-node-entry.mjs';
+import { viteNodeFetch } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@nuxt/vite-builder/dist/vite-node.mjs';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL, encodePath } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/vue/server-renderer/index.mjs';
+import destr, { destr as destr$1 } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/destr/dist/index.mjs';
+import { createHooks } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unstorage/drivers/fs.mjs';
+import { mkdir, writeFile, rename, unlink, readFile } from 'node:fs/promises';
+import fsDriver from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unstorage/drivers/fs-lite.mjs';
+import lruCache from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unstorage/drivers/lru-cache.mjs';
+import { digest, hash as hash$1 } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/ohash/dist/index.mjs';
+import { klona } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/scule/dist/index.mjs';
+import { getContext } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unctx/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/radix3/dist/index.mjs';
+import consola, { consola as consola$1 } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/youch-core/build/index.js';
+import { Youch } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/errx/dist/index.js';
-import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
+import { stringify, uneval } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/devalue/index.js';
+import { captureRawStackTrace, parseRawStackTrace } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/errx/dist/index.js';
+import { isVNode, isRef, toValue } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/vue/index.mjs';
+import _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@nuxt/vite-builder/dist/fix-stacktrace.mjs';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$1, basename } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/pathe/dist/index.mjs';
-import { getIcons } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@iconify/utils/lib/index.mjs';
-import { collections } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/.nuxt/nuxt-icon-server-bundle.mjs';
-import { walkResolver } from 'file://C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unhead/dist/utils.mjs';
+import { dirname as dirname$1, resolve as resolve$1, basename } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/pathe/dist/index.mjs';
+import { getIcons } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@iconify/utils/lib/index.mjs';
+import { collections } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/.nuxt/nuxt-icon-server-bundle.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unhead/dist/server.mjs';
+import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unhead/dist/plugins.mjs';
+import { walkResolver } from 'file:///mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/unhead/dist/utils.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/Cornaa/Downloads/portfolio-nuxt/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -50,16 +51,72 @@ for (const asset of serverAssets) {
   assets$1.mount(asset.baseName, unstorage_47drivers_47fs({ base: asset.dir, ignore: (asset?.ignore || []) }));
 }
 
+// @ts-check
+
+
+/**
+ * @param {string} item
+ */
+function normalizeFsKey (item) {
+  const safe = item.replace(/[^\w.-]/g, '_');
+  const prefix = safe.slice(0, 20);
+  const hash = crypto$1.createHash('sha256').update(item).digest('hex');
+  return `${prefix}-${hash}`
+}
+
+/**
+ * Write `value` to `path` atomically so a concurrent reader never observes a
+ * truncated file: the payload is written to a unique sibling and renamed over
+ * the destination, which is a single filesystem operation.
+ * @param {string} path
+ * @param {string} value
+ */
+async function atomicWrite (path, value) {
+  await mkdir(dirname(path), { recursive: true });
+  const tmp = `${path}.${crypto$1.randomBytes(8).toString('hex')}.tmp`;
+  try {
+    await writeFile(tmp, value, 'utf8');
+    await rename(tmp, path);
+  } catch (error) {
+    await unlink(tmp).catch(() => {});
+    throw error
+  }
+}
+
+/**
+ * @param {{ base?: string }} opts
+ * @returns {import('unstorage').Driver} An unstorage driver that uses both LRU cache and file system, with LRU as the primary and file system as the fallback.
+ */
+function cacheDriver (opts) {
+  const fs = fsDriver({ base: opts.base });
+  const lru = lruCache({ max: 1000 });
+  const base = resolve(opts.base || '.');
+
+  return {
+    ...fs, // fall back to file system - only the bottom three methods are used in renderer
+    async setItem (key, value, opts) {
+      await atomicWrite(join(base, normalizeFsKey(key)), value);
+      await lru.setItem?.(key, value, opts);
+    },
+    async hasItem (key, opts) {
+      return await lru.hasItem(key, opts) || await fs.hasItem(normalizeFsKey(key), opts)
+    },
+    async getItem (key, opts) {
+      return await lru.getItem(key, opts) || await fs.getItem(normalizeFsKey(key), opts)
+    },
+  }
+}
+
 const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/Cornaa/Downloads/portfolio-nuxt","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/Cornaa/Downloads/portfolio-nuxt/server","watchOptions":{"ignored":[null]}}));
-storage.mount('cache:nuxt:payload', file_58_47_47_47C_58_47Users_47Cornaa_47Downloads_47portfolio_45nuxt_47node_modules_47_64nuxt_47nitro_45server_47dist_47runtime_47utils_47cache_45driver_46js({"driver":"file:///C:/Users/Cornaa/Downloads/portfolio-nuxt/node_modules/@nuxt/nitro-server/dist/runtime/utils/cache-driver.js","base":"C:/Users/Cornaa/Downloads/portfolio-nuxt/.nuxt/cache/nuxt/payload"}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/Cornaa/Downloads/portfolio-nuxt/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/Cornaa/Downloads/portfolio-nuxt/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/Cornaa/Downloads/portfolio-nuxt/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/mnt/c/Users/Cornaa/Downloads/portfolio-nuxt","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/server","watchOptions":{"ignored":[null]}}));
+storage.mount('cache:nuxt:payload', cacheDriver({"base":"/mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/.nuxt/cache/nuxt/payload"}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/mnt/c/Users/Cornaa/Downloads/portfolio-nuxt/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -900,6 +957,11 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
     }
     return void 0;
   }
+});
+
+getContext("nitro-app", {
+  asyncContext: false,
+  AsyncLocalStorage: void 0
 });
 
 function isPathInScope(pathname, base) {
@@ -2240,7 +2302,7 @@ async function errorHandler(error, event) {
   // H3 will handle fallback
 }
 
-const rootDir = "C:/Users/Cornaa/Downloads/portfolio-nuxt";
+const rootDir = "/mnt/c/Users/Cornaa/Downloads/portfolio-nuxt";
 
 const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"Zidan Portfolio — Backend Developer & System Administrator. Designing, building, and maintaining modern web applications and reliable infrastructure from concept to deployment."}],"link":[{"rel":"icon","type":"image/svg+xml","href":"/favicon.svg"},{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"}],"style":[],"script":[],"noscript":[],"title":"Ahmad Zidan — Software Engineer"};
 
@@ -2266,7 +2328,7 @@ const asyncContext = getContext("nuxt-dev", {
 	asyncContext: true,
 	AsyncLocalStorage
 });
-const _q5WxnvSRpfefjpvZdamqaKXa3nayYvPWcOB6T80gbU = (nitroApp) => {
+const _BZ399u3H0iQcMQXO15_22X5_hruDzC7Mp5OtIpJcCQ = (nitroApp) => {
 	const handler = nitroApp.h3App.handler;
 	nitroApp.h3App.handler = (event) => {
 		return asyncContext.callAsync({
@@ -2342,26 +2404,11 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _q5WxnvSRpfefjpvZdamqaKXa3nayYvPWcOB6T80gbU,
+  _BZ399u3H0iQcMQXO15_22X5_hruDzC7Mp5OtIpJcCQ,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
-const assets = {
-  "/index.mjs": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"1bd0a-vDzZlb9i4szn/nKt4od/SjaWPvE\"",
-    "mtime": "2026-07-17T00:54:01.890Z",
-    "size": 113930,
-    "path": "index.mjs"
-  },
-  "/index.mjs.map": {
-    "type": "application/json",
-    "etag": "\"6bbd0-EjUhyM4BCsxJKtlFkogDr7PeO/8\"",
-    "mtime": "2026-07-17T00:54:01.890Z",
-    "size": 441296,
-    "path": "index.mjs.map"
-  }
-};
+const assets = {};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -2386,7 +2433,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _gfyoop = eventHandler((event) => {
+const _NOyw_0 = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -2542,7 +2589,7 @@ function publicAssetsURL(...path) {
 
 const warnOnceSet = /* @__PURE__ */ new Set();
 const DEFAULT_ENDPOINT = "https://api.iconify.design";
-const _McI5v2 = defineCachedEventHandler(async (event) => {
+const _ije4hz = defineCachedEventHandler(async (event) => {
   const url = getRequestURL(event);
   if (!url)
     return createError({ status: 400, message: "Invalid icon request" });
@@ -2622,20 +2669,14 @@ function resolveUnrefHeadInput(input) {
   return walkResolver(input, VueResolver);
 }
 
-function filterIslandProps(props) {
-  if (!props) {
-    return {};
+function computeIslandHash(name, serializedProps, context, source) {
+  let parsed;
+  try {
+    parsed = JSON.parse(serializedProps);
+  } catch {
+    parsed = serializedProps;
   }
-  const out = {};
-  for (const key in props) {
-    if (!key.startsWith("data-v-")) {
-      out[key] = props[key];
-    }
-  }
-  return out;
-}
-function computeIslandHash(name, filteredProps, context, source) {
-  return hash$1([name, filteredProps, context, source]).replace(/[-_]/g, "");
+  return hash$1([name, parsed, context, source]).replace(/[-_]/g, "");
 }
 
 const NUXT_RUNTIME_PAYLOAD_EXTRACTION = false;
@@ -2997,8 +3038,7 @@ async function getIslandContext(event) {
 		});
 	}
 	const rawContext = event.method === "GET" ? getQuery$1(event) : await readBody(event);
-	const rawProps = destr$1(rawContext?.props) || {};
-	const filteredProps = filterIslandProps(rawProps);
+	const serializedProps = typeof rawContext?.props === "string" ? rawContext.props : "{}";
 	
 	
 	const clientContext = {};
@@ -3011,31 +3051,32 @@ async function getIslandContext(event) {
 	}
 	
 	
-	const expectedHash = computeIslandHash(componentName, filteredProps, clientContext, undefined);
+	const expectedHash = computeIslandHash(componentName, serializedProps, clientContext, undefined);
 	if (!hashId || hashId !== expectedHash) {
 		throw createError({
 			statusCode: 400,
 			statusMessage: "Invalid island request hash"
 		});
 	}
+	const parsedProps = destr$1(serializedProps) || {};
 	return {
 		url: typeof rawContext?.url === "string" ? rawContext.url : "/",
 		id: hashId,
 		name: componentName,
-		props: rawProps,
+		props: parsedProps,
 		slots: {},
 		components: {}
 	};
 }
 
-const _lazy_rGsDjL = () => Promise.resolve().then(function () { return renderer; });
+const _lazy_acrShS = () => Promise.resolve().then(function () { return renderer; });
 
 const handlers = [
-  { route: '', handler: _gfyoop, lazy: false, middleware: true, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_rGsDjL, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_nuxt_icon/:collection', handler: _McI5v2, lazy: false, middleware: false, method: undefined },
+  { route: '', handler: _NOyw_0, lazy: false, middleware: true, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_acrShS, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_nuxt_icon/:collection', handler: _ije4hz, lazy: false, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: handler$1, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_rGsDjL, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_acrShS, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -3180,7 +3221,7 @@ function useNitroApp() {
 runNitroPlugins(nitroApp$1);
 
 if (!globalThis.crypto) {
-  globalThis.crypto = nodeCrypto.webcrypto;
+  globalThis.crypto = crypto$1.webcrypto;
 }
 const { NITRO_NO_UNIX_SOCKET, NITRO_DEV_WORKER_ID } = process.env;
 trapUnhandledNodeErrors();
@@ -3277,7 +3318,7 @@ const template$1 = (messages) => {
 		..._messages,
 		...messages
 	};
-	return "<!DOCTYPE html><html lang=\"en\"><head><title>" + escapeHtml(messages.status) + " - " + escapeHtml(messages.statusText) + " | " + escapeHtml(messages.appName) + "</title><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1.0,minimum-scale=1.0\" name=\"viewport\"><style>.spotlight{background:linear-gradient(45deg,#00dc82,#36e4da 50%,#0047e1);filter:blur(20vh)}*,:after,:before{border-color:var(--un-default-border-color,#e5e7eb);border-style:solid;border-width:0;box-sizing:border-box}:after,:before{--un-content:\"\"}html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-moz-tab-size:4;tab-size:4;-webkit-tap-highlight-color:transparent}body{line-height:inherit;margin:0}h1{font-size:inherit;font-weight:inherit}h1,p{margin:0}*,:after,:before{--un-rotate:0;--un-rotate-x:0;--un-rotate-y:0;--un-rotate-z:0;--un-scale-x:1;--un-scale-y:1;--un-scale-z:1;--un-skew-x:0;--un-skew-y:0;--un-translate-x:0;--un-translate-y:0;--un-translate-z:0;--un-pan-x: ;--un-pan-y: ;--un-pinch-zoom: ;--un-scroll-snap-strictness:proximity;--un-ordinal: ;--un-slashed-zero: ;--un-numeric-figure: ;--un-numeric-spacing: ;--un-numeric-fraction: ;--un-border-spacing-x:0;--un-border-spacing-y:0;--un-ring-offset-shadow:0 0 transparent;--un-ring-shadow:0 0 transparent;--un-shadow-inset: ;--un-shadow:0 0 transparent;--un-ring-inset: ;--un-ring-offset-width:0px;--un-ring-offset-color:#fff;--un-ring-width:0px;--un-ring-color:rgba(147,197,253,.5);--un-blur: ;--un-brightness: ;--un-contrast: ;--un-drop-shadow: ;--un-grayscale: ;--un-hue-rotate: ;--un-invert: ;--un-saturate: ;--un-sepia: ;--un-backdrop-blur: ;--un-backdrop-brightness: ;--un-backdrop-contrast: ;--un-backdrop-grayscale: ;--un-backdrop-hue-rotate: ;--un-backdrop-invert: ;--un-backdrop-opacity: ;--un-backdrop-saturate: ;--un-backdrop-sepia: }.fixed{position:fixed}.-bottom-1\\/2{bottom:-50%}.left-0{left:0}.right-0{right:0}.grid{display:grid}.mb-16{margin-bottom:4rem}.mb-8{margin-bottom:2rem}.h-1\\/2{height:50%}.max-w-520px{max-width:520px}.min-h-screen{min-height:100vh}.place-content-center{place-content:center}.overflow-hidden{overflow:hidden}.bg-white{--un-bg-opacity:1;background-color:rgb(255 255 255/var(--un-bg-opacity))}.px-8{padding-left:2rem;padding-right:2rem}.text-center{text-align:center}.text-8xl{font-size:6rem;line-height:1}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-black{--un-text-opacity:1;color:rgb(0 0 0/var(--un-text-opacity))}.font-light{font-weight:300}.font-medium{font-weight:500}.leading-tight{line-height:1.25}.font-sans{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@media(prefers-color-scheme:dark){.dark\\:bg-black{--un-bg-opacity:1;background-color:rgb(0 0 0/var(--un-bg-opacity))}.dark\\:text-white{--un-text-opacity:1;color:rgb(255 255 255/var(--un-text-opacity))}}@media(min-width:640px){.sm\\:px-0{padding-left:0;padding-right:0}.sm\\:text-4xl{font-size:2.25rem;line-height:2.5rem}}</style><script>!function(){const e=document.createElement(\"link\").relList;if(!(e&&e.supports&&e.supports(\"modulepreload\"))){for(const e of document.querySelectorAll('link[rel=\"modulepreload\"]'))r(e);new MutationObserver(e=>{for(const o of e)if(\"childList\"===o.type)for(const e of o.addedNodes)\"LINK\"===e.tagName&&\"modulepreload\"===e.rel&&r(e)}).observe(document,{childList:!0,subtree:!0})}function r(e){if(e.ep)return;e.ep=!0;const r=function(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),\"use-credentials\"===e.crossOrigin?r.credentials=\"include\":\"anonymous\"===e.crossOrigin?r.credentials=\"omit\":r.credentials=\"same-origin\",r}(e);fetch(e.href,r)}}();<\/script></head><body class=\"antialiased bg-white dark:bg-black dark:text-white font-sans grid min-h-screen overflow-hidden place-content-center text-black\"><div class=\"-bottom-1/2 fixed h-1/2 left-0 right-0 spotlight\"></div><div class=\"max-w-520px text-center\"><h1 class=\"font-medium mb-8 sm:text-10xl text-8xl\">" + escapeHtml(messages.status) + "</h1><p class=\"font-light leading-tight mb-16 px-8 sm:px-0 sm:text-4xl text-xl\">" + escapeHtml(messages.description) + "</p></div></body></html>";
+	return "<!DOCTYPE html><html lang=\"en\"><head><title>" + escapeHtml(messages.status) + " - " + escapeHtml(messages.statusText) + " | " + escapeHtml(messages.appName) + "</title><meta charset=\"utf-8\"><meta content=\"width=device-width,initial-scale=1,minimum-scale=1\" name=\"viewport\"><style>.spotlight{background:linear-gradient(45deg,#00dc82,#36e4da 50%,#0047e1);filter:blur(20vh)}*,:after,:before{border-color:var(--un-default-border-color,#e5e7eb);border-style:solid;border-width:0;box-sizing:border-box}:after,:before{--un-content:\"\"}html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-moz-tab-size:4;tab-size:4;-webkit-tap-highlight-color:transparent}body{line-height:inherit;margin:0}h1{font-size:inherit;font-weight:inherit}h1,p{margin:0}*,:after,:before{--un-rotate:0;--un-rotate-x:0;--un-rotate-y:0;--un-rotate-z:0;--un-scale-x:1;--un-scale-y:1;--un-scale-z:1;--un-skew-x:0;--un-skew-y:0;--un-translate-x:0;--un-translate-y:0;--un-translate-z:0;--un-pan-x: ;--un-pan-y: ;--un-pinch-zoom: ;--un-scroll-snap-strictness:proximity;--un-ordinal: ;--un-slashed-zero: ;--un-numeric-figure: ;--un-numeric-spacing: ;--un-numeric-fraction: ;--un-border-spacing-x:0;--un-border-spacing-y:0;--un-ring-offset-shadow:0 0 transparent;--un-ring-shadow:0 0 transparent;--un-shadow-inset: ;--un-shadow:0 0 transparent;--un-ring-inset: ;--un-ring-offset-width:0px;--un-ring-offset-color:#fff;--un-ring-width:0px;--un-ring-color:rgba(147,197,253,.5);--un-blur: ;--un-brightness: ;--un-contrast: ;--un-drop-shadow: ;--un-grayscale: ;--un-hue-rotate: ;--un-invert: ;--un-saturate: ;--un-sepia: ;--un-backdrop-blur: ;--un-backdrop-brightness: ;--un-backdrop-contrast: ;--un-backdrop-grayscale: ;--un-backdrop-hue-rotate: ;--un-backdrop-invert: ;--un-backdrop-opacity: ;--un-backdrop-saturate: ;--un-backdrop-sepia: }.fixed{position:fixed}.-bottom-1\\/2{bottom:-50%}.left-0{left:0}.right-0{right:0}.grid{display:grid}.mb-16{margin-bottom:4rem}.mb-8{margin-bottom:2rem}.h-1\\/2{height:50%}.max-w-520px{max-width:520px}.min-h-screen{min-height:100vh}.place-content-center{place-content:center}.overflow-hidden{overflow:hidden}.bg-white{--un-bg-opacity:1;background-color:rgb(255 255 255/var(--un-bg-opacity))}.px-8{padding-left:2rem;padding-right:2rem}.text-center{text-align:center}.text-8xl{font-size:6rem;line-height:1}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-black{--un-text-opacity:1;color:rgb(0 0 0/var(--un-text-opacity))}.font-light{font-weight:300}.font-medium{font-weight:500}.leading-tight{line-height:1.25}.font-sans{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@media(prefers-color-scheme:dark){.dark\\:bg-black{--un-bg-opacity:1;background-color:rgb(0 0 0/var(--un-bg-opacity))}.dark\\:text-white{--un-text-opacity:1;color:rgb(255 255 255/var(--un-text-opacity))}}@media(min-width:640px){.sm\\:px-0{padding-left:0;padding-right:0}.sm\\:text-4xl{font-size:2.25rem;line-height:2.5rem}}</style><script>!function(){const e=document.createElement(\"link\").relList;if(!(e&&e.supports&&e.supports(\"modulepreload\"))){for(const e of document.querySelectorAll('link[rel=\"modulepreload\"]'))r(e);new MutationObserver(e=>{for(const o of e)if(\"childList\"===o.type)for(const e of o.addedNodes)\"LINK\"===e.tagName&&\"modulepreload\"===e.rel&&r(e)}).observe(document,{childList:!0,subtree:!0})}function r(e){if(e.ep)return;e.ep=!0;const r=function(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerPolicy&&(r.referrerPolicy=e.referrerPolicy),\"use-credentials\"===e.crossOrigin?r.credentials=\"include\":\"anonymous\"===e.crossOrigin?r.credentials=\"omit\":r.credentials=\"same-origin\",r}(e);fetch(e.href,r)}}();<\/script></head><body class=\"antialiased bg-white dark:bg-black dark:text-white font-sans grid min-h-screen overflow-hidden place-content-center text-black\"><div class=\"-bottom-1/2 fixed h-1/2 left-0 right-0 spotlight\"></div><div class=\"max-w-520px text-center\"><h1 class=\"font-medium mb-8 sm:text-10xl text-8xl\">" + escapeHtml(messages.status) + "</h1><p class=\"font-light leading-tight mb-16 px-8 sm:px-0 sm:text-4xl text-xl\">" + escapeHtml(messages.description) + "</p></div></body></html>";
 };
 
 const error500 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({

@@ -56,7 +56,7 @@ export const usePortfolioData = () => {
     github: 'github.com/Hibakupoxzz',
     linkedin: 'linkedin.com/in/ahmad-zidan-594732365/',
     instagram: 'instagram.com/hibakupoxz_/',
-    photos: ['/images/profile-2.jpeg', '/images/profile-1.jpeg'],
+    photos: ['/images/profile-2.jpeg', '/images/profile-1.png'],
     resumeUrl: '#'
   }
 
@@ -131,11 +131,11 @@ export const usePortfolioData = () => {
       type: 'Full-time',
       period: 'Aug 2024 — Present',
       summary:
-        'Berkontribusi pada seluruh siklus pengembangan fitur produk inti, mulai dari perencanaan hingga rilis produksi.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       bullets: [
-        'Merancang, mengembangkan, dan merilis 30+ fitur baru untuk platform web dan mobile.',
-        'Meningkatkan stabilitas aplikasi dengan menyelesaikan lebih dari 120 bug, dari isu UI kecil hingga masalah performa kritis.',
-        'Berkolaborasi dengan tim UI/UX dan produk untuk menerjemahkan kebutuhan bisnis menjadi solusi teknis.'
+        'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       ],
       tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Git', 'MySQL', 'Python', 'C#', 'Unity', 'Java', 'Figma']
     },
@@ -146,10 +146,10 @@ export const usePortfolioData = () => {
       type: 'Full-time',
       period: 'Aug 2025 — Jul 2026',
       summary:
-        'Mengembangkan dan memelihara API internal serta integrasi pihak ketiga, sambil menjaga stabilitas rilis melalui pengujian otomatis.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       bullets: [
-        'Membangun endpoint REST API baru yang digunakan lebih dari 10 tim internal.',
-        'Menulis test otomatis yang menaikkan code coverage dari 40% menjadi 75%.'
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       ],
       tags: ['Nest.js', 'Docker', 'REST API', 'Jest']
     },
@@ -160,9 +160,9 @@ export const usePortfolioData = () => {
       type: 'Internship',
       period: 'Aug 25 2025 — Apr 22 2026',
       summary:
-        'Membantu tim membangun landing page dan komponen UI yang dapat digunakan kembali di beberapa proyek internal.',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       bullets: [
-        'Mengurangi waktu pengembangan fitur baru sebesar 20% dengan membangun komponen reusable.'
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       ],
       tags: ['Laravel', 'API', 'MySQL', 'Flutter', 'Git', 'Linux', 'Networking']
     }
@@ -170,53 +170,51 @@ export const usePortfolioData = () => {
 
   const certifications: Certification[] = [
     {
-      title: 'Dev Certification for Web',
-      issuer: 'dev.cert',
-      id: '720814QV56',
-      date: 'Jan 2026',
+      title: 'Webinar "Introduction to Capture the Flag"',
+      issuer: 'ID-Networkers',
+      id: 'Lorem ipsum',
+      date: '02 Agustus 2025',
       detailsUrl: '#'
     },
     {
-      title: 'Cloud Academy Graduate — Web Learning Path',
-      issuer: 'Cloud Academy',
-      id: 'CA24/GRAD/XXIV-07/A338D4KY3877',
-      date: 'Jul 2025',
-      description:
-        'Cloud Academy adalah program yang dirancang untuk mencetak talenta teknis kelas dunia bagi perusahaan dan startup Indonesia.',
+      title: 'Google I_O Extended',
+      issuer: 'Google Developer Group',
+      id: 'Lorem ipsum',
+      date: 'July 19, 2025',
       detailsUrl: '#',
       certificateUrl: '#'
     },
     {
-      title: 'Menjadi Frontend Developer Expert',
-      issuer: 'Dicoding Indonesia',
-      id: 'JLX1425JJX72',
-      date: 'Oct 2025',
+      title: 'Google Cloud Roadshows x Build with AI Bogor 2025',
+      issuer: 'Google Developer Group',
+      id: 'Lorem Ipsum',
+      date: 'May 3, 2025',
       detailsUrl: '#',
       certificateUrl: '#'
     },
     {
-      title: 'Belajar Membuat Aplikasi Web dengan React',
-      issuer: 'Dicoding Indonesia',
-      id: '53XEQOK5VXRN',
-      date: 'Oct 2025',
+      title: 'Webinar “From Vision to Version 1.0: Roadmapping Your Game Effectively”',
+      issuer: 'CodeLamp Indonesia',
+      id: 'Lorem Ipsum',
+      date: '17 Agustus 2025',
       detailsUrl: '#',
       certificateUrl: '#'
     },
-    {
-      title: 'Belajar Pengembangan Aplikasi Backend Intermediate',
-      issuer: 'Dicoding Indonesia',
-      id: 'KEXL11Y80XG2',
-      date: 'May 2025',
-      detailsUrl: '#',
-      certificateUrl: '#'
-    },
-    {
-      title: 'Belajar Fundamental Aplikasi Backend',
-      issuer: 'Dicoding Indonesia',
-      id: 'IDCAMP2024/L1-MP-022',
-      date: 'Mar 2025',
-      certificateUrl: '#'
-    }
+    // {
+    //   title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    //   issuer: 'Lorem ipsum dolor sit amet',
+    //   id: 'Lorem Ipsum',
+    //   date: 'Lorem Ipsum',
+    //   detailsUrl: '#',
+    //   certificateUrl: '#'
+    // },
+    // {
+    //   title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    //   issuer: 'Lorem ipsum dolor sit amet',
+    //   id: 'Lorem Ipsum',
+    //   date: 'Lorem Ipsum',
+    //   certificateUrl: '#'
+    // }
   ]
 
   return { profile, projects, experience, certifications }

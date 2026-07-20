@@ -35,7 +35,7 @@ const { certifications } = usePortfolioData()
 
           <h3 class="font-display font-semibold text-ink mt-4 leading-snug">{{ cert.title }}</h3>
           <p class="text-sm text-ink-muted mt-1">{{ cert.issuer }}</p>
-          <p class="text-xs text-ink-faint mt-0.5">ID: {{ cert.id }}</p>
+          <!-- <p class="text-xs text-ink-faint mt-0.5">ID: {{ cert.id }}</p> -->
           <p v-if="cert.description" class="text-sm text-ink-muted leading-relaxed mt-3">
             {{ cert.description }}
           </p>

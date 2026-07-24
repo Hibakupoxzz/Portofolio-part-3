@@ -24,6 +24,7 @@ interface _GlobalComponents {
   TheNavDesktop: typeof import("../../components/TheNavDesktop.vue")['default']
   TheNavMobile: typeof import("../../components/TheNavMobile.vue")['default']
   TheProjects: typeof import("../../components/TheProjects.vue")['default']
+  TheSkills: typeof import("../../components/TheSkills.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   NuxtErrorBoundary: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -58,6 +59,7 @@ interface _GlobalComponents {
   LazyTheNavDesktop: LazyComponent<typeof import("../../components/TheNavDesktop.vue")['default']>
   LazyTheNavMobile: LazyComponent<typeof import("../../components/TheNavMobile.vue")['default']>
   LazyTheProjects: LazyComponent<typeof import("../../components/TheProjects.vue")['default']>
+  LazyTheSkills: LazyComponent<typeof import("../../components/TheSkills.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   LazyNuxtErrorBoundary: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

@@ -29,4 +29,4 @@ export { requestIdleCallback, cancelIdleCallback } from '#app/compat/idle-callba
 export { setInterval } from '#app/compat/interval';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
 export { useActiveSection, useGoToSection } from '../composables/useActiveSection';
-export { usePortfolioData, Experience, Certification, Project } from '../composables/usePortfolioData';
+export { usePortfolioData, Experience, Certification, Project, SkillGroup } from '../composables/usePortfolioData';

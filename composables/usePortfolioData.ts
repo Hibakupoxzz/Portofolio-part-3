@@ -44,6 +44,11 @@ export interface Project {
   codeUrl?: string
 }
 
+export interface SkillGroup {
+  label: string
+  items: string[]
+}
+
 export const usePortfolioData = () => {
   const profile = {
     name: 'Ahmad Zidan Al Ikhsan',
@@ -56,7 +61,7 @@ export const usePortfolioData = () => {
     github: 'github.com/Hibakupoxzz',
     linkedin: 'linkedin.com/in/ahmad-zidan-594732365/',
     instagram: 'instagram.com/hibakupoxz_/',
-    photos: ['/images/profile-2.jpeg', '/images/profile-1.png'],
+    photos: ['/images/profile-2.jpeg', '/images/profile-1.jpg'],
     resumeUrl: '#'
   }
 
@@ -125,44 +130,47 @@ export const usePortfolioData = () => {
 
   const experience: Experience[] = [
     {
-      role: 'Website & Game Developer',
+      role: 'Leader & Lead Tutor',
       company: 'Devaccto RPL SMK Plus Pelita Nusantara',
       location: 'Cibinong, Bogor',
-      type: 'Full-time',
+      type: 'Student Organization',
       period: 'Aug 2024 — Present',
       summary:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        "Devaccto RPL is the school's IT organization dedicated to developing school applications while providing a place for students to learn, collaborate, and grow through peer tutoring.",
       bullets: [
-        'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        'Lead and manage a team of over 50 members in a school software development organization, overseeing school application development and fostering technical growth through peer mentoring.',
+        'Designed the curriculum and served as the lead instructor for introductory programming and game development training using Unity and C#.',
+        'Developed the "VERITAS" electronic student disciplinary record system, enabling teachers to efficiently record, monitor, and manage student violations within the school.'
       ],
       tags: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Laravel', 'Git', 'MySQL', 'Python', 'C#', 'Unity', 'Java', 'Figma']
     },
     {
-      role: 'Leader of Devaccto RPL',
-      company: 'Devaccto RPL SMK Plus Pelita Nusantara',
+      role: 'Website Developer',
+      company: 'SynchronizeTeams',
       location: 'Cibinong, Bogor',
-      type: 'Full-time',
-      period: 'Aug 2025 — Jul 2026',
+      type: 'Organization',
+      period: 'Aug 2025 — Present',
       summary:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'SynchronizeTeams is a creative development organization crafting next-gen web & mobile applications using Laravel, Golang, Nuxt, Svelte, React, and Flutter. We synchronize ideas, data, and people through technology that’s innovative, fast, and reliable.',
       bullets: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        'Collaborated with cross-functional teams to design, build, and deploy scalable software solutions.',
+        'Implemented clean architecture, reusable components, and best coding practices to improve maintainability.',
+        'Participated in code reviews, technical discussions, and agile development workflows.'
       ],
-      tags: ['Nest.js', 'Docker', 'REST API', 'Jest']
+      tags: ['Laravel', 'MySQL', 'Golang', 'Nuxt']
     },
     {
       role: 'Backend Developer, Mobile Developer, SysAdmin',
       company: 'PT. Digital Forte Indonesia',
       location: 'Grand Depok City, Depok',
       type: 'Internship',
-      period: 'Aug 25 2025 — Apr 22 2026',
+      period: 'Aug 16 2024 — Present',
       summary:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'Digital Forte Indonesia is a technology company that partners with businesses to accelerate their digital transformation by delivering innovative, reliable, and client-focused digital solutions.',
       bullets: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        'Contributed to the end-to-end development of the "Alumni Trisakti" web and mobile application using Laravel and Flutter.',
+        "Collaborated with the engineering team to design and develop the company's website.",
+        'Supported the deployment and maintenance of web applications on development and production environments.',
       ],
       tags: ['Laravel', 'API', 'MySQL', 'Flutter', 'Git', 'Linux', 'Networking']
     }
@@ -217,5 +225,24 @@ export const usePortfolioData = () => {
     // }
   ]
 
-  return { profile, projects, experience, certifications }
+  const skills: SkillGroup[] = [
+      {
+        label: 'Backend',
+        items: ['PHP', 'Laravel', 'MySQL', 'REST API', 'Python', 'C#', 'Java', 'Golang']
+      },
+      {
+        label: 'Frontend',
+        items: ['HTML', 'CSS', 'JavaScript', 'Nuxt', 'astro.js']
+      },
+      {
+        label: 'SysAdmin',
+        items: ['Linux', 'Docker', 'Networking', 'Git',]
+      },
+      {
+        label: 'Tools & Other',
+        items: ['Figma', 'Postman', 'GitHub', 'VS Code', 'Unity', 'Aseprite', 'Krita', 'Blender', 'Composer', 'Photoshop', 'After Effect']
+      } 
+    ]
+
+    return { profile, projects, experience, certifications, skills }
 }

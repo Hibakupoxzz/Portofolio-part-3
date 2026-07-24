@@ -44,7 +44,7 @@ const initials = profile.name
             href="#projects"
             class="inline-flex items-center rounded-tl-xl rounded-tr-md rounded-br-xl rounded-bl-md bg-ink text-white text-sm font-medium px-6 py-3 hover:bg-[#1E293B] transition-colors"
           >
-            View My Work
+            View My Resume
           </a>
           <a
             v-for="social in socials"

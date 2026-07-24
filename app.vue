@@ -10,6 +10,7 @@ const sectionClass = (id: string) => (activeSection.value === id ? '' : 'hidden 
     <TheNavMobile />
     <main>
       <TheHero :class="sectionClass('top')" />
+      <TheSkills :class="sectionClass('skills')" />
       <TheProjects :class="sectionClass('projects')" />
       <TheExperience :class="sectionClass('experience')" />
       <TheCertifications :class="sectionClass('certifications')" />

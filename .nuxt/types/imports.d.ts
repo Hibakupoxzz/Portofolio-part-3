@@ -195,7 +195,7 @@ declare global {
   export type { Component, ComponentPublicInstance, ComputedRef, DirectiveBinding, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, MaybeRef, MaybeRefOrGetter, VNode, WritableComputedRef } from 'vue'
   import('vue')
   // @ts-ignore
-  export type { Experience, Certification, Project } from '../../composables/usePortfolioData'
+  export type { Experience, Certification, Project, SkillGroup } from '../../composables/usePortfolioData'
   import('../../composables/usePortfolioData')
 }
 // for vue template auto import

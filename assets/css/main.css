@@ -61,6 +61,22 @@ body {
   background-size: 16px 16px;
 }
 
+/* signature: infinite auto-scrolling skills marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 26s linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee 26s linear infinite reverse;
+}
+.animate-marquee:hover,
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
 /* hide scrollbar on the horizontally-scrollable nav (masih bisa di-scroll via swipe/drag) */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -89,3 +105,4 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+

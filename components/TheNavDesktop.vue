@@ -8,7 +8,7 @@ const links = [
   { label: 'Experience', href: '#experience' },
   { label: 'Certifications', href: '#certifications' },
   { label: 'Contact', href: '#contact' },
-  { label: 'Gists', href: `https://${profile.github}?tab=repositories`, external: true }
+  // { label: 'Gists', href: `https://${profile.github}?tab=repositories`, external: true }
 ]
 </script>
 

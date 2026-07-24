@@ -37,6 +37,7 @@ export interface Project {
   description: string
   stack: string[]
   image?: string
+  hideOverlayTitle?: boolean
   features?: string[]
   showcase?: string[]
   detailsUrl?: string
@@ -61,7 +62,10 @@ export const usePortfolioData = () => {
     github: 'github.com/Hibakupoxzz',
     linkedin: 'linkedin.com/in/ahmad-zidan-594732365/',
     instagram: 'instagram.com/hibakupoxz_/',
-    photos: ['/images/profile-2.jpeg', '/images/profile-1.jpg'],
+  photos: [
+    { src: '/images/profile-2.jpeg', role: 'Backend Developer and SysAdmin' },
+    { src: '/images/profile-1.jpg', role: 'Nadeko Sengoku <3' }
+  ],
     resumeUrl: '#'
   }
 
@@ -134,7 +138,7 @@ export const usePortfolioData = () => {
       company: 'Devaccto RPL SMK Plus Pelita Nusantara',
       location: 'Cibinong, Bogor',
       type: 'Student Organization',
-      period: 'Aug 2024 — Present',
+      period: 'Aug 2024 - Present',
       summary:
         "Devaccto RPL is the school's IT organization dedicated to developing school applications while providing a place for students to learn, collaborate, and grow through peer tutoring.",
       bullets: [
@@ -149,7 +153,7 @@ export const usePortfolioData = () => {
       company: 'SynchronizeTeams',
       location: 'Cibinong, Bogor',
       type: 'Organization',
-      period: 'Aug 2025 — Present',
+      period: "Aug 2025 - Present",
       summary:
         'SynchronizeTeams is a creative development organization crafting next-gen web & mobile applications using Laravel, Golang, Nuxt, Svelte, React, and Flutter. We synchronize ideas, data, and people through technology that’s innovative, fast, and reliable.',
       bullets: [
@@ -164,7 +168,7 @@ export const usePortfolioData = () => {
       company: 'PT. Digital Forte Indonesia',
       location: 'Grand Depok City, Depok',
       type: 'Internship',
-      period: 'Aug 16 2024 — Present',
+      period: 'Aug 16 2024 - Present',
       summary:
         'Digital Forte Indonesia is a technology company that partners with businesses to accelerate their digital transformation by delivering innovative, reliable, and client-focused digital solutions.',
       bullets: [
